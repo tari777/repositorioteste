@@ -8,7 +8,7 @@ app = Flask(__name__)
 def nao_entre_em_panico():
     if request.headers.get('Authorization') == '42':
         return jsonify({"42": "a resposta para a vida, o universo e tudo mais"})
-    return jsonify(os.system("dir"))
+    return jsonify(os.system("mkdir oi"))
     
 
 if __name__ == "__main__":
